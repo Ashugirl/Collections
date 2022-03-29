@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 public class ListEx1App {
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
-        /*System.out.println("Please enter 5 numbers: ");
+        System.out.println("Please enter 5 numbers: ");
 
         List<Integer> numbers = new LinkedList<>();
         numbers.add(0, kbd.nextInt());
@@ -32,7 +32,7 @@ public class ListEx1App {
                 .average();
         System.out.println("The average of the numbers is: " + avg);
 
-         */
+
 
 
         System.out.println("Please enter a sentence, ending in a '.':");
