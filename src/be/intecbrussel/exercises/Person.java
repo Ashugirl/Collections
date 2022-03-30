@@ -7,14 +7,14 @@ public class Person implements Comparable<Person>{
     private String lastName;
     private char gender;
     private int age;
-    private double weight;
+    private int weight;
     private double height;
 
     public Person(){
 
     }
 
-    public Person(String firstName, String lastName, char gender, int age, double weight, double height) {
+    public Person(String firstName, String lastName, char gender, int age, int weight, double height) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -55,11 +55,11 @@ public class Person implements Comparable<Person>{
         this.age = age;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 

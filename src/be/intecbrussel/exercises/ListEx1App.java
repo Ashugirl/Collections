@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 public class ListEx1App {
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
-        System.out.println("Please enter 5 numbers: ");
+       /* System.out.println("Please enter 5 numbers: ");
 
         List<Integer> numbers = new LinkedList<>();
         numbers.add(0, kbd.nextInt());
@@ -32,19 +32,34 @@ public class ListEx1App {
                 .average();
         System.out.println("The average of the numbers is: " + avg);
 
+        */
+
 
 
 
         System.out.println("Please enter a sentence, ending in a '.':");
         List<String> sentence = new ArrayList<>();
-        int i = 0;
+
+        while (true){
+            String word = kbd.next();
+            sentence.add(word+ " ");
+
+            if (word.endsWith(".")){
+                break;
+            }
+        }
+        sentence.forEach(System.out::println);
+
+        /*int i = 0;
         do{
         sentence.add(0, kbd.next());
         }while (sentence.get(i).contains(".") == false);
 
-        /*for(i = sentence.size()-1; i != 0; i--) {
+        for(i = sentence.size()-1; i != 0; i--) {
             System.out.println(sentence.get(i));
-        }*/
+        }
+
+
 
         IntStream numWords = sentence.stream()
                 .mapToInt(a -> Integer.parseInt(a));
@@ -54,7 +69,8 @@ public class ListEx1App {
         String[] newSentence = sentence.toArray(new String[sentence.size()]);
         for(String word : newSentence){
             System.out.println(word);
-        }
+        }*/
+
 
 
     }
